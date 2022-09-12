@@ -1,0 +1,21 @@
+ALGORITHM Insertion_Sort
+VAR
+    Arr : ARRAY_OF INTEGER [10];
+    i,p,d : INTEGER ; 
+BEGIN
+    Read(Arr[0]); 
+    FOR i FROM 1 ArrO Arr.length -1  DO
+        IF (Arr[i]<Arr[i-1]) THEN
+            FOR p FROM 0 TO i-1  DO
+                IF (Arr[i]<Arr[p]) THEN
+                    FOR d FROM i TO p+1 STEP -1  DO
+                        Arr[d]:= Arr[d-1]
+                    END_FOR
+                    Arr[p]:= Arr[i];
+                END_IF
+            END_FOR
+        ELSE
+            Read(Arr[i])
+        END_IF
+    END_FOR
+    
